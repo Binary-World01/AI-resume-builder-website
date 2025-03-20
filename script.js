@@ -4,8 +4,7 @@ function handleAuthentication() {
     const password = document.getElementById('userPassword').value;
     
     if (validateEmail(email) && password.length >= 8) {
-        document.getElementById('authOverlay').style.display = 'none';
-        document.getElementById('builderContainer').style.display = 'flex';
+        window.location.href = "/app.html";
         initializeResumeBuilder();
     } else {
         alert('Please enter a valid email and password (min 8 characters)');
@@ -123,13 +122,3 @@ function initializeResumeBuilder() {
     // Add any additional initialization logic
 }
 
-// Initial Setup
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('authOverlay').style.display = 'flex';
-});
-
-// Initial Setup - Update this part
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('authOverlay').style.display = 'flex';
-    document.getElementById('builderContainer').style.display = 'none';
-});
