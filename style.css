@@ -13,7 +13,7 @@
 }
 
 body {
-    background: var(--secondary-color);
+    background:rgb(10, 10, 10);
     min-height: 100vh;
 }
 
@@ -24,24 +24,27 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background-color: rgb(10, 10, 10);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
 }
 
 .auth-card {
-    background: white;
+    background: #1b1b1b;
     padding: 2.5rem;
     border-radius: 1rem;
     width: 100%;
     max-width: 400px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .auth-card h2 {
-    color: var(--primary-color);
+    color: #f1faee;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -50,24 +53,30 @@ body {
     margin-bottom: 1.2rem;
 }
 
+.auth-card input{
+    color: white;
+}
+
 .auth-input {
     width: 100%;
     padding: 0.8rem;
-    border: 1px solid #ddd;
+    border:1px solid #706f6f;
+    color: #000000;
     border-radius: 0.5rem;
+    background-color: #1b1b1b;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
 
 .auth-input:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color: white;
 }
 
 .auth-btn {
     width: 100%;
     padding: 0.8rem;
-    background: var(--primary-color);
+    background-color: red;
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -77,7 +86,7 @@ body {
 }
 
 .auth-btn:hover {
-    background: #1F4561;
+    background: #d00000;
 }
 
 /* Main Builder Container */
@@ -85,34 +94,42 @@ body {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 1rem;
-    display: none;
+    display: flex;
     gap: 2rem;
 }
 
 /* Input Section */
 .input-section {
     flex: 1;
-    background: white;
+    background: #1b1b1b;
     padding: 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .section-title {
-    color: var(--primary-color);
+    color: #f1faee;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid purple;
 }
 
-.form-group {
+.form-group input {
     margin-bottom: 1.2rem;
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.form-group textarea{
+        margin-bottom: 1.2rem;
+        background-color: #1b1b1b;
+        color: white;
 }
 
 .form-label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--text-dark);
+    color:pink;
     font-weight: 500;
 }
 
@@ -127,7 +144,7 @@ body {
 
 .form-input:focus {
     outline: none;
-    border-color: var(--primary-color);
+    border-color:#706f6f;
     box-shadow: 0 0 0 3px rgba(42, 92, 130, 0.1);
 }
 
@@ -141,7 +158,7 @@ body {
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--accent-color);
+    border: 3px solid pink;
     margin: 1rem auto;
     display: none;
 }
@@ -149,8 +166,9 @@ body {
 /* Resume Preview Section */
 .resume-preview {
     flex: 1;
-    background: white;
+    background:#1b1b1b;
     padding: 2rem;
+    color: white;
     border-radius: 1rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -161,12 +179,12 @@ body {
 }
 
 .resume-name {
-    color: var(--primary-color);
+    color:#f1faee;
     margin-bottom: 0.5rem;
 }
 
 .resume-contact {
-    color: #666;
+    color: #858282;
     margin-bottom: 1rem;
 }
 
@@ -175,10 +193,10 @@ body {
 }
 
 .resume-section h3 {
-    color: var(--primary-color);
+    color: pink;
     margin-bottom: 0.8rem;
     padding-bottom: 0.3rem;
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid purple;
 }
 
 .skill-tags {
@@ -188,7 +206,7 @@ body {
 }
 
 .skill-tag {
-    background: var(--accent-color);
+    background:#d00000;
     color: white;
     padding: 0.3rem 0.8rem;
     border-radius: 1rem;
@@ -199,8 +217,9 @@ body {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    background: var(--primary-color);
+    background-image: linear-gradient(to right,rgb(62, 62, 235) , rgb(24, 245, 245),rgb(253, 182, 194));
     color: white;
+    font-weight: 600;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 0.9rem;
