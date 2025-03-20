@@ -8,20 +8,6 @@
     <link rel="shortcut icon" href="https://i.ibb.co/4n2WG1gd/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Authentication Modal -->
-    <div class="auth-overlay" id="authOverlay">
-        <div class="auth-card">
-            <h2>Welcome to AI Resume Builder</h2>
-            <div class="auth-input-group">
-                <input type="email" class="auth-input" placeholder="Enter your email" id="userEmail">
-            </div>
-            <div class="auth-input-group">
-                <input type="password" class="auth-input" placeholder="Create password" id="userPassword">
-            </div>
-            <button class="auth-btn" onclick="handleAuthentication()">Get Started</button>
-        </div>
-    </div>
-
     <!-- Main Builder Interface -->
     <div class="builder-container" id="builderContainer">
         <section class="input-section">
@@ -80,7 +66,7 @@
             <button class="auth-btn" onclick="autofillAI()" style="margin-top: 1rem">
                 <i class="fas fa-magic"></i> AI Autofill
             </button>
-            <button class="auth-btn" onclick="window.print()" style="margin-top: 0.5rem; background: var(--accent-color)">
+            <button class="auth-btn" onclick="window.print()" style="margin-top: 0.5rem; background: red ">
                 Print Resume
             </button>
         </section>
