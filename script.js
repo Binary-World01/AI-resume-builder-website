@@ -4,7 +4,7 @@ function handleAuthentication() {
     const password = document.getElementById('userPassword').value;
     
     if (validateEmail(email) && password.length >= 8) {
-        window.location.href = "/app.html";
+        window.location.href = "app.html";
         initializeResumeBuilder();
     } else {
         alert('Please enter a valid email and password (min 8 characters)');
